@@ -1,0 +1,95 @@
+/*
+    REPORT CARDS CONTAINER
+*/
+#report-cards {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+/*
+    ACCURACY PERCENTAGES
+*/
+#accuracies-title {
+    margin-bottom: 5px;
+}
+
+#accuracies {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#accuracies b {
+    padding: 8px;
+    border: 2px solid var(--border-color);
+}
+
+#white-accuracy {
+    background-color: white;
+}
+
+#black-accuracy {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/*
+    CLASSIFICATION MESSAGE
+    e.g "Nd4 is a great move"
+*/
+#classification-message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    margin: 5px;
+}
+
+#classification-message {
+    font-size: 18px;
+}
+
+#top-alternative-message {
+    color: #98bc49;
+}
+
+/*
+    ENGINE SUGGESTIONS
+*/
+#engine-suggestions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#engine-suggestions-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.engine-suggestion {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin: 5px;
+
+    font-size: 18px;
+}
+
+.engine-suggestion b {
+    padding: 0 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*
+    OPENING NAME
+*/
+#opening-name {
+    text-align: center;
+}

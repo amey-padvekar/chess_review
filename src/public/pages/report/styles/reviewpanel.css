@@ -1,0 +1,269 @@
+/*
+    ENTIRE REVIEW PANEL
+*/
+#review-panel {
+    display: grid;
+
+    grid-template-columns: 100%;
+
+    padding: 1rem 0rem 0rem 0rem;
+
+    /* gap: 30px; */
+
+
+    background-color: var(--secondary-color);
+    background-image: url(./../../../media/horse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+    /* opacity: 0.9; */
+
+    /* color: black; */
+
+    /* border-radius: 1.5rem; */
+
+    border: 1px solid var(--border-color);
+}
+
+@media (min-width: 1264px) {
+    #review-panel {
+        grid-template-rows: 88% 12%;
+    }
+}
+
+@media (max-width: 1264px) and (min-width: 1000px) {
+    #review-panel {
+        grid-template-rows: 82% 18%;
+    }
+}
+
+@media (max-width: 999px) {
+    #review-panel {
+        grid-template-rows: 82% 18%;
+    }
+}
+
+@media (max-height: 860px) {
+    #review-panel {
+        grid-template-rows: 82% 18%;
+    }
+}
+
+/*
+    REVIEW PANEL NON-TOOLBAR SECTION
+*/
+#review-panel-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color: aliceblue; */
+
+    gap: 5px;
+
+    height: 100%;
+
+    padding: 10px;
+}
+
+@media (max-width: 1265px), (max-height: 860px) {
+    #review-panel-main {
+        padding-bottom: 30px;
+    }
+}
+
+/*
+    REVIEW PANEL HEADING
+*/
+#review-panel-title {
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+@media (max-width: 1126px) {
+    #review-panel-title {
+        font-size: 27px;
+    }
+}
+
+/*
+    GAME LOAD TYPE DROPDOWN
+*/
+#load-type-dropdown-container {
+    margin-bottom: 5px;
+}
+
+#load-type-dropdown {
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--border-color);
+    color: white;
+}
+
+/*
+    PGN INPUT TEXTAREA54
+*/
+#pgn {
+    width: 90%;
+    height: 130px;
+    resize: none;
+
+    border-radius: 10px; 
+} 
+
+/*
+    CHESS.COM / LICHES USERNAME INPUT TEXTAREA
+*/
+#chess-site-username-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    width: 90%;
+}
+
+#chess-site-username {
+    display: none;
+    width: 100%;
+    height: 30px;
+
+    border-radius: 10px;
+    background-color: var(--border-color);
+
+    resize: none;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#fetch-account-games-button {
+    display: none;
+    transform: translateY(-2px);
+}
+
+#fetch-account-games-button:active {
+    transform: translateY(0px);
+}
+
+/*
+    ANALYSE GREEN BUTTON
+*/
+#review-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 10px;
+    padding: 10px 50px;
+
+    font-size: 20px;
+
+    text-shadow: 0px 1px 2px black;
+}
+
+#review-button img {
+    filter: drop-shadow(0px 1px 1px black);
+}
+
+/*
+    SEARCH DEPTH SLIDER
+*/
+#depth-slider-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+#depth-slider {
+    width: 70%;
+}
+
+#depth-message {
+    margin: 0px;
+    text-align: center;
+}
+
+/*
+    ANALYSIS PROGRESS BAR
+*/
+#evaluation-progress-bar {
+    display: none;
+    margin-top: 10px;
+    width: 80%;
+}
+
+/*
+    ANALYSIS STATUS MESSAGE (INFO/ERROR)
+*/
+#status-message {
+    text-align: center;
+    color: rgb(255, 53, 53);
+}
+
+/*
+    RECAPTCHA COMPONENT
+*/
+.g-recaptcha {
+    display: none;
+    margin-top: 10px;
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+
+@media (max-width: 1300px) {
+    .g-recaptcha {
+        transform: scale(0.85);
+    }
+}
+
+@media (max-width: 1200px) {
+    .g-recaptcha {
+        transform: scale(0.75);
+    }
+}
+
+@media (max-width: 999px) {
+    .g-recaptcha {
+        transform: scale(0.9);
+    }
+}
+
+/*
+    ANALYSIS SECONDARY MESSAGE
+*/
+#secondary-message {
+    text-align: center;
+    font-size: 14px;
+}
+
+/*
+    REVIEW PANEL BOTTOM TOOLBAR
+*/
+#review-panel-toolbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#review-panel-toolbar {
+    grid-row: 2 / 3;
+
+    border-top: 2px solid var(--border-color);
+}
+
+#review-panel-toolbar-buttons {
+    margin: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+    transition: gap 0.5s ease;
+}
+
+#review-panel-toolbar-buttons img {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+#review-panel-toolbar-buttons img:hover {
+    transform: translateY(-3px);
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+    background-image: url(./../../../media/bg.jpg);
+    /* background: linear-gradient(rgba(54, 52, 52, 0.5), rgba(37, 34, 34, 0.5)),
+    url(./../../../media/ravi-kumar-sKZYPerA5s0-unsplash.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+.white {
+    color: rgb(255, 255, 255);
+}
+
+@media (min-width: 1000px) and (min-height: 860px) {
+    #review-container {
+        display: grid;
+    
+        grid-template-columns: 68vw 28vw;
+        grid-template-rows: 100vh;
+    }
+
+    #review-panel {
+        /* margin: 20px; */
+    }
+}
+
+@media (max-width: 999px), (max-height: 860px) {
+    #review-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #review-panel {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #secondary-message {
+        width: 60%;
+    }
+
+    #review-panel-toolbar {
+        padding: 10px;
+    }
+}

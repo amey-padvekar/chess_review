@@ -1,0 +1,27 @@
+.profile {
+    color: white;
+    font-size: 20px;
+}
+
+#board-outer-container {
+    gap: 30px;
+}
+
+#board-inner-container {
+    flex-direction: column;
+}
+
+#evaluation-bar {
+    background-color: white;
+    border: 2px solid var(--border-color);
+    max-height: 80%;
+}
+
+#board {
+    grid-column: 1 / 2;
+
+    max-width: 100%;
+
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+}
