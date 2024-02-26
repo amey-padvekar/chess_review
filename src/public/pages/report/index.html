@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/static/pages/report/styles/gameselect.css">
     <link rel="stylesheet" href="/static/pages/report/styles/reviewpanel.css">
     <link rel="stylesheet" href="/static/pages/report/styles/report.css">
+    <link rel="stylesheet" href="/static/pages/report/styles/coach.css">
 
     <link rel="icon" href="/static/media/favicon.ico">
 
@@ -39,6 +40,29 @@
 
     <div class="center">
         <div id="review-container">
+
+            <div class="center" id="coach">
+                <div id="report-cards">
+                    <h2 id="accuracies-title" class="white">Accuracies</h2>
+                    <div id="accuracies">
+                        <b id="white-accuracy">0%</b>
+                        <b id="black-accuracy">0%</b>
+                    </div>
+
+                    <div id="classification-message-container">
+                        <img id="classification-icon" src="/static/media/book.png" height="25">
+                        <b id="classification-message"></b>
+                    </div>
+
+                    <b id="top-alternative-message">Qxf2+ was best</b>
+
+                    <div id="engine-suggestions">
+                        <h2 id="engine-suggestions-title" class="white">Engine</h2>
+                    </div>
+
+                    <span id="opening-name" class="white"></span>
+                </div>
+            </div>
 
             <div id="board-outer-container" class="center">
                 
@@ -96,26 +120,7 @@
 
                     <b id="secondary-message" class="white"></b>
 
-                    <div id="report-cards">
-                        <h2 id="accuracies-title" class="white">Accuracies</h2>
-                        <div id="accuracies">
-                            <b id="white-accuracy">0%</b>
-                            <b id="black-accuracy">0%</b>
-                        </div>
-    
-                        <div id="classification-message-container">
-                            <img id="classification-icon" src="/static/media/book.png" height="25">
-                            <b id="classification-message"></b>
-                        </div>
 
-                        <b id="top-alternative-message">Qxf2+ was best</b>
-
-                        <div id="engine-suggestions">
-                            <h2 id="engine-suggestions-title" class="white">Engine</h2>
-                        </div>
-
-                        <span id="opening-name" class="white"></span>
-                    </div>
                 </div>
 
                 <div id="review-panel-toolbar">

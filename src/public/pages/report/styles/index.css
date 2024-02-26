@@ -21,7 +21,7 @@ body {
     #review-container {
         display: grid;
     
-        grid-template-columns: 68vw 28vw;
+        grid-template-columns: 28vw 48vw 28vw;
         grid-template-rows: 100vh;
     }
 

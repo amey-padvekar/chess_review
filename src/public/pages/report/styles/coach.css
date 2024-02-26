@@ -1,0 +1,14 @@
+#coach{
+    grid-column: 1 / 2;
+    color: rgb(12, 12, 12);
+    /* background-color: aliceblue; */
+    background-color: var(--secondary-color);
+    background-image: url(./../../../media/horse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    z-index: 99;
+    border: 1px solid rgb(117, 117, 117);
+
+}
+
