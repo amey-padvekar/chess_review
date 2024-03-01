@@ -1,0 +1,15 @@
+{
+    "version":2,
+    "builds": [
+        {
+            "src":"./src/public/pages/report/index.html",
+            "use":"@vercel/node"
+        }
+    ],
+    "routes" : [
+        {
+            "src" : "/(.*)",
+            "dest" : "/"
+        }
+    ]
+}

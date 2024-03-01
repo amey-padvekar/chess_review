@@ -7,8 +7,13 @@
     "path": "^0.12.7",
     "pgn-parser": "^2.2.0"
   },
+
+  "engines": {
+    "node" : "14.x"
+
+  },
   "scripts": {
-    "start": "tsc && nodemon dist/index.js",
+    "start": "tsc && node dist/index.js",
     "build": "tsc",
     "test": "tsc && node dist/test/reports.js"
   },
