@@ -1,6 +1,11 @@
 /*
     ENTIRE REVIEW PANEL
 */
+
+@font-face {
+    font-family: game;
+    src: url('./../../../fonts/MadimiOne-Regular.ttf');
+}
 #review-panel {
     display: grid;
 
@@ -24,6 +29,8 @@
     /* border-radius: 1.5rem; */
 
     border: 1px solid var(--border-color);
+
+    font-family: 'game';
 }
 
 @media (min-width: 1264px) {
@@ -59,11 +66,15 @@
     align-items: center;
     /* color: aliceblue; */
 
-    gap: 5px;
+    margin: 1.5vw;
+
+    gap: 35px;
 
     height: 100%;
 
     padding: 10px;
+
+    font-family: 'game';
 }
 
 @media (max-width: 1265px), (max-height: 860px) {
@@ -78,6 +89,7 @@
 #review-panel-title {
     margin: 0px 0px 10px 0px;
     text-align: center;
+    font-family: 'game';
 }
 
 @media (max-width: 1126px) {

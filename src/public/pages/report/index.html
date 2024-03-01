@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-    <title>Game Report</title>
+    <title>Analyse Game</title>
 
     <meta name="og:title" content="♟️ WintrCat's Game Report">
     <meta name="og:url" content="https://chess.wintrcat.uk/">
@@ -43,17 +43,21 @@
 
             <div class="center" id="coach">
                 <div id="report-cards">
+
+                        
                     <h2 id="accuracies-title" class="white">Accuracies</h2>
+                    
                     <div id="accuracies">
                         <b id="white-accuracy">0%</b>
                         <b id="black-accuracy">0%</b>
                     </div>
 
                     <div id="classification-message-container">
+                        <img class="logo" src="static/media/avatar.png" alt="avatar" height="25">
                         <img id="classification-icon" src="/static/media/book.png" height="25">
                         <b id="classification-message"></b>
                     </div>
-
+                        
                     <b id="top-alternative-message">Qxf2+ was best</b>
 
                     <div id="engine-suggestions">
@@ -80,7 +84,7 @@
 
             <div id="review-panel">
                 <div id="review-panel-main">
-                    <h1 id="review-panel-title" class="white">📑 Analysis</h1>
+                    <h1 id="review-panel-title" class="white">🖥️ Analysis</h1>
 
                     <div id="load-type-dropdown-container" class="white">
                         <span>Load game from</span>
@@ -105,7 +109,7 @@
                         <b>Start</b>
                     </button>
 
-                    <b class="white">⚙️ Search depth</b>
+                    <b class="white">⚙️ Depth search</b>
                     <div id="depth-slider-container">
                         <input id="depth-slider" type="range" min="14" max="20" value="16">
                         <span id="depth-counter" class="white">16 🐇</span>
