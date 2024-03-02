@@ -3,18 +3,19 @@
     "chess.js": "^1.0.0-beta.6",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "netlify-cli": "^17.17.1",
+    "netlify-lambda": "^2.0.16",
     "node-fetch": "^2.7.0",
     "path": "^0.12.7",
-    "pgn-parser": "^2.2.0"
+    "pgn-parser": "^2.2.0",
+    "serverless-http": "^3.2.0"
   },
-
   "engines": {
-    "node" : "18.x"
-
+    "node": "18.x"
   },
   "scripts": {
     "start": "tsc && node dist/index.js",
-    "build": "tsc",
+    "build": "tsc && netlify deploy --prod",
     "test": "tsc && node dist/test/reports.js"
   },
   "devDependencies": {

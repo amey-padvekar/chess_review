@@ -8,6 +8,9 @@ import { Position } from "./lib/types/Position";
 import { ParseRequestBody, ReportRequestBody } from "./lib/types/RequestBody";
 
 const router = Router();
+const express = require('express');
+const serverless = require('serverless-http');
+const app = express();
 
 router.post("/parse", async (req, res) => {
 
@@ -99,5 +102,8 @@ router.post("/report", async (req, res) => {
     res.json({ results });
 
 });
+
+app.use('/.netlify/functions/api', router);
+module.exports.handler = serverless(app);
 
 export default router;
