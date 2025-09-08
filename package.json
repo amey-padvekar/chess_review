@@ -14,7 +14,8 @@
     "node": "22.x"
   },
   "scripts": {
-    "build": "tsc",
+    "start": "tsc && node dist/index.js",
+    "build": "tsc ",
     "test": "tsc && node dist/test/reports.js"
   },
   "devDependencies": {
