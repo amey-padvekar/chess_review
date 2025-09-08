@@ -14,7 +14,6 @@
     "node": "22.x"
   },
   "scripts": {
-    //"start": "tsc && node dist/index.js",
     "build": "tsc",
     "test": "tsc && node dist/test/reports.js"
   },
