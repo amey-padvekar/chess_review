@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "tsc && node dist/index.js",
-    "build": "tsc && netlify deploy --prod",
+    "build": "tsc && npm run build",
     "test": "tsc && node dist/test/reports.js"
   },
   "devDependencies": {
