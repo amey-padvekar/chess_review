@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "tsc && node dist/index.js",
-    "build": "tsc && npm run build",
+    "build": "tsc && node build",
     "test": "tsc && node dist/test/reports.js"
   },
   "devDependencies": {
